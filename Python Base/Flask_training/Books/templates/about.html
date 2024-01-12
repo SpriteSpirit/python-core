@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    {% if title %}
+        <title>Flask Tutorial -- {{ title }}</title>
+    {% else %}
+         <title>Flask Tutorial</title>
+    {% endif %}
+</head>
+<body>
+<h1>About</h1>
+</body>
+</html>
