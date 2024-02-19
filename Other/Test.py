@@ -33,7 +33,7 @@ a = float(input("A: "))
 b = (a * 10) // 1 % 10 % 10
 
 
-print(b)'''
+print(b)
 
 
 def multiply_range(start, end):
@@ -49,3 +49,4 @@ def multiply_range(start, end):
 
 
 print(multiply_range(5, 10))
+'''

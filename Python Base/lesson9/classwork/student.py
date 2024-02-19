@@ -1,6 +1,6 @@
 # по умолчанию чтение текстовых файлов
 
-with open("students.txt", encoding="utf-8") as file:
+with open("students.txt") as file:
     for student_data in file:
         # data = student_data.rstrip("\n").split(": ")
         # name = data[0]
