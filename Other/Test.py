@@ -133,6 +133,13 @@ B = (x for x in A if x % 2 == 0)
 print(*B) # развертка
 print(*(x * x for x in A if x % 2 == 1))
 print(*map(lambda x: x*x, A))'''
+import json
+from pprint import pprint
+
+import pygame
+
+clock = pygame.time.Clock()
+
 #
 # A = (1, 2, 3, 4, 5)
 # B = tuple(x * 10 for x in A)
@@ -173,7 +180,36 @@ print(*map(lambda x: x*x, A))'''
 #
 # print(*starmap(lambda i, char: char * i, enumerate('Hello'))) # e ll lll oooo
 
-from functools import reduce
+# from functools import reduce
+#
+# A = (1, 2, 3, 4, 5, 6)
+# print(reduce(lambda x, y: x + y, A))
+#
+# size = (600, 500) #размеры окна
+# screen = pygame.display.set_mode(size) #создание окна
+#
+#
+# while True:
+#     my_rect = pygame.Rect(0, 0, 100, 100)
+#     pygame.draw.rect(screen, 'red', my_rect)
+#     # my_rect.centerx = (size[0] // 2)
+#     my_rect.midtop = (size[0] // 2, 0)
+#
+#     pygame.display.update()#обновление экрана
+#     clock.tick(15) # метод, ограничивающий FPS.
 
-A = (1, 2, 3, 4, 5, 6)
-print(reduce(lambda x, y: x + y, A))
+#
+# with open("test.json", encoding='utf-8') as file:
+#     data = json.load(file)
+#
+# # pprint(data)
+# print(data["accounts"][-1]['name'])
+
+
+def get_sum(num1, num2, num3):
+    result = num1 + num2 + num3
+    return result
+
+
+print(get_sum(5, 5, 5))
+
