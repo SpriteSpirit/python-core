@@ -104,7 +104,7 @@ class TodoListTests(unittest.TestCase):
 
         # Добавляем задачи в список
         todo_list.add_task("Задача 1")
-         todo_list.add_task("Задача 2")
+        todo_list.add_task("Задача 2")
 
         # Проверяем, что список задач содержит добавленные задачи
         self.assertEqual(todo_list.fetch_tasks(), ["Задача 1", "Задача 2"])
@@ -213,25 +213,30 @@ except ValueError as e:
     # Обработка исключения
     print("Произошла ошибка:", str(e))
 """
-from random import randint
-class Dice:
 
-    def __init__(self, faces):
-        self.faces = faces
-        self.history = []
+# from random import randint
+#
+#
+# class Dice:
+#
+#     def __init__(self, faces):
+#         self.faces = faces
+#         self.history = []
+#
+#     def dice_throw(self):
+#         face = randint(1, self.faces)
+#         self.history.append(face)
+#         return face
+#
+#     def get_history(self, x=0):
+#         return self.history[-x:]
+#
+#
+# dice_4 = Dice(4)
+# print(dice_4.dice_throw())
+# print(dice_4.dice_throw())
+# print(dice_4.dice_throw())
+# print(dice_4.dice_throw())
+# print(dice_4.get_history(3))
 
-    def dice_throw(self):
-        face = randint(1, self.faces)
-        self.history.append(face)
-        return face
 
-    def get_history(self, x=0):
-        return self.history[-x:]
-
-
-dice_4 = Dice(4)
-print(dice_4.dice_throw())
-print(dice_4.dice_throw())
-print(dice_4.dice_throw())
-print(dice_4.dice_throw())
-print(dice_4.get_history(3))
