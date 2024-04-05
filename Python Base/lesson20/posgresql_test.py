@@ -1,27 +1,17 @@
 import psycopg2
 
 # connect to db
-connect = psycopg2.connect(
-    host='localhost',
-    database='testBase',
-    user='angelina',
-    password='2277'
-)
+connect = psycopg2.connect(host='localhost', database='testBase', user='angelina', password='2277')
+try:
+    with connect:
+        with connect.cursor() as cursor:
+            # execute query
+            cursor.executemany('INSERT INTO user_account VALUES (%s, %s)', [(8, 'Mark'), (9, 'Den')])
+            cursor.execute('SELECT * FROM user_account')
+            # connect.commit()
+            rows = cursor.fetchall()
 
-# create cursor
-cursor = connect.cursor()
-
-# execute query
-cursor.execute('INSERT INTO user_account VALUES (%s, %s)', (5, 'Tedd'))
-cursor.execute('SELECT * FROM user_account')
-
-connect.commit()
-
-rows = cursor.fetchall()
-
-for row in rows:
-    print(row)
-
-# close cursor and connection
-cursor.close()
-connect.close()
+            for row in rows:
+                print(row)
+finally:
+    connect.close()
