@@ -140,6 +140,7 @@ import pygame
 
 clock = pygame.time.Clock()
 
+
 #
 # A = (1, 2, 3, 4, 5)
 # B = tuple(x * 10 for x in A)
@@ -205,11 +206,177 @@ clock = pygame.time.Clock()
 # # pprint(data)
 # print(data["accounts"][-1]['name'])
 
+#
+# def get_sum(num1, num2, num3):
+#     result = num1 + num2 + num3
+#     return result
+#
+#
+# print(get_sum(5, 5, 5))
+#
 
-def get_sum(num1, num2, num3):
-    result = num1 + num2 + num3
-    return result
+
+# number = 5
+# line = '5'
+
+# print(type(number))
+# print(type(line))
+
+# print(dir(line))
+
+# help(str.join)
+
+#
+# class Cat:
+#     name = 'Barsik'
+#     age = 5
+#     color = "Red"
+#
+#     def speak(self):
+#         print('Meow!')
+#
+#     def play(self):
+#         print('Meow! Я играю')
+#
+# cat1 = Cat()
+#
+# print(cat1.color)
+# print(cat1.age)
+# print(cat1.name)
+# cat1.speak()
+# cat1.play()
+
+#
+# class Animal:
+#     def __init__(self, name, color, age, food):
+#         self.name = name
+#         self.color = color
+#         self.age = age
+#         self.food = food
+#
+#     def eat(self):
+#         print(f"I'm {self.name} and i'm eat {self.food}")
+#
+#     def __str__(self):
+#         return f"I'm {self.__class__.__name__}. My name is {self.name}. I'm {self.age} and i'm eat {self.food}"
+#
+#
+# class Cat(Animal):
+#     def __init__(self, name, color, age, food, toy):
+#         super().__init__(name, color, age, food)
+#         self.toy = toy
+#
+#     def eat(self):
+#         super().eat()
+#         print(f'I like my toy {self.toy}')
+#
+#
+# barsik = Cat("Barsik", "Red", 3, "meat", "rat")
+# print(barsik)
+# # barsik.eat()
 
 
-print(get_sum(5, 5, 5))
+# def meeting(*names: str) -> None:
+#     for name in names:
+#         print(f'Welcome, {name}!')
+#
+#
+# meeting('ALex', 'Bob', 'Mary', 'Sarah','ALex', 'Bob', 'Mary', 'Sarah')
+
+
+# class Item:
+#     def __init__(self, name, amount, price):
+#         self.name: str = name
+#         self.amount: int = amount
+#         self.price: int = price
+#
+#
+# class Shop:
+#     def __init__(self, *items):
+#         self.stock: list = []
+#
+#         for item in items:
+#             self.stock.append({'name': item.name, 'amount': item.amount, 'price': item.price})
+#
+#
+# apple = Item('apple', 10, 20)
+# banana = Item('banana', 20, 15)
+#
+# shop = Shop(apple, banana)
+# print(shop.stock)
+
+
+# class Cat:
+#     def __init__(self, color, age, name, tail=True):
+#         self.color: str = color
+#         self.age: int = age
+#         self.name: str = name
+#         self.voice: str = 'Meow!'
+#         self.tail: bool = tail
+#
+#     def counter(self, count: int = 0):
+#         pass
+#
+#
+# barsik = Cat('red', 5, "Barsik")
+# print(barsik.voice)
+
+
+# def add_num(*numbers: int):
+#     num_list = []
+#
+#     for num in numbers:
+#         try:
+#             num_list.append(int(num))
+#         except ValueError:
+#             print('Ошибка ввода')
+#             return
+#
+#     return num_list
+#
+#
+# def check(num_list: list):
+#     for num in num_list:
+#         if num > 10:
+#             return False
+#
+#     return True
+#
+#
+# num_list = add_num(1, 2, '3f', 4)
+# print(check(num_list))
+
+
+fruits = ['orange', 'apple', 'grape', 'banana']
+
+for fruit in fruits:
+    if fruit == 'berry':
+        print(fruit)
+    else:
+        continue
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

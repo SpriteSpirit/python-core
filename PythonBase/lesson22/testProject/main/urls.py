@@ -1,8 +1,11 @@
-from django.urls import path
-from main import views
-
-app_name = 'main'
-
-urlpatterns = [
-    path('', views.index, name='index'),
-]
+# from django.urls import path
+#
+# from main.apps import MainConfig
+# from main.views import index, contact
+#
+# app_name = MainConfig.name
+#
+# urlpatterns = [
+#     path('', index, name='index'),
+#     path('contact/', contact, name='contact'),
+# ]
