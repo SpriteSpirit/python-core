@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Переводчик Flask</h1>
+
+<form action="/translate" method="post">
+    <textarea name="text" placeholder="Введите текст для перевода"></textarea>
+    <select name="dest_lang">
+        <option value="en">Английский</option>
+        <option value="it">Итальянский</option>
+        <!-- Добавьте другие языки, если нужно -->
+    </select>
+    <button type="submit">Перевести</button>
+</form>
+</body>
+</html>

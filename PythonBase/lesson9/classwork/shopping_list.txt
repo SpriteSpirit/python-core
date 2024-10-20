@@ -1,0 +1,14 @@
+Matches pcs:1:10
+Lemon pcs:1:50
+Beans pcs:1:100
+Garbage bags large:1:50
+Apples kg:1:1009
+Bananas kg:1:100
+Oatmeal packs:2:100
+123 е
+Food film:1:509
+Oranges kg:1:100
+Foil packs:1:100
+Pears kg:1:200
+Rye flour kg:1:100
+Chocolate pcs:1:1009
