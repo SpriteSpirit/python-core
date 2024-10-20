@@ -58,7 +58,7 @@ class Shop:
                         item['Quantity'] -= amount
                         item = {"Name": item_name, "Quantity": amount}
                         buyer.get_item(item)
-                        return f'Спасибо за покупку!'
+                        return 'Спасибо за покупку!'
                     else:
                         return 'Недостаточно денег'
                 else:

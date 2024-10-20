@@ -145,6 +145,7 @@ def get_vacancies(city, vacancy, page):
     response.raise_for_status()
     return response.json()
 
+
 def getPage(city, vacancy, page=0):
     """
     Создаем метод для получения страницы со списком вакансий.
@@ -188,7 +189,7 @@ for page in range(0, 5):
     if (jsObj['pages'] - page) <= 1:
         break
 
-    # Необязательная задержка, но чтобы не нагружать сервисы hh, оставим. 5 сек мы может подождать
+    # Необязательная задержка, но чтобы не нагружать сервисы hh, оставим. 5 сек мы можем подождать
     time.sleep(0.25)
 
 print('Страницы поиска собраны')

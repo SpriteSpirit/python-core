@@ -43,7 +43,7 @@
     def index(request):
         return render(request, 'catalog\index.html'
 
-Перед запуском на Windows нужно прописать в консоли python manage.py runserver 0.0.0.0:80
+Перед запуском на Windows нужно прописать в консоли python manage.py runserver 127.1.1.0:80xx (xx - 00 или другой)
 
-Для загрузки данных python manage.py dumpdata --indent=2 --exclude auth.permission --exclude contenttypes -o db.json
+Для загрузки данных python manage.py dumpdata --indent=2 -o db.json
 или так python -Xutf8 testProject/manage.py dumpdata --indent=2 -o testProject/data.json

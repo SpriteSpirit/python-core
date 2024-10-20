@@ -21,6 +21,8 @@ class Field:
             for cell in row:
                 if cell is None or (cell is not None and not show_ships):
                     display_row += "O "
+                elif cell == 'X':
+                    display_row += "x "
                 else:
                     display_row += "■ "
             if i + 1 != 10:
@@ -83,7 +85,7 @@ class BattleshipGame:
     def play(self):
         print("Расстановка кораблей компьютера:")
         self.place_ships_randomly(self.computer_field, self.ships)
-        self.computer_field.display()
+        self.computer_field.display(True)
 
         print("Ваша расстановка кораблей:")
         self.place_ships_randomly(self.player_field, self.ships)
@@ -106,5 +108,4 @@ class BattleshipGame:
 
 if __name__ == "__main__":
     game = BattleshipGame()
-
-
+    game.play()

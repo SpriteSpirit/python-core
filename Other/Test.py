@@ -135,6 +135,7 @@ print(*(x * x for x in A if x % 2 == 1))
 print(*map(lambda x: x*x, A))'''
 import json
 from pprint import pprint
+from typing import List
 
 import pygame
 
@@ -347,36 +348,87 @@ clock = pygame.time.Clock()
 # print(check(num_list))
 
 
-fruits = ['orange', 'apple', 'grape', 'banana']
+# fruits = ['orange', 'apple', 'grape', 'banana']
+#
+# for fruit in fruits:
+#     if fruit == 'berry':
+#         print(fruit)
+#     else:
+#         continue
+#
 
-for fruit in fruits:
-    if fruit == 'berry':
-        print(fruit)
-    else:
-        continue
+# import secrets
+# import random
+# def generate_password():
+#     password = ''
+#     chars = '+-/*!&$#?=@<>abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
+#
+#     for i in range(random.randint(8, 12)):
+#         password += secrets.choice(chars)
+#
+#     return password
+#
+# print(generate_password())
+#
+# day = "monday"
+#
+# match day:
+#     case "monday":
+#         print("It's Monday")
+#     case "tuesday":
+#         print("It's Tuesday")
+#     case "wednesday":
+#         print("It's Wednesday")
+#     case "thursday":
+#         print("It's Thursday")
+#     case "friday":
+#         print("It's Friday")
+#     case "saturday":
+#         print("It's Saturday")
+#     case "sunday":
+#         print("It's Sunday")
+#     case _:
+#         print("I don't know this day")
+#
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# def count_vowels_and_consonants(text: str):
+#     """Ваш код"""
+#
+#     text = text.lower()
+#     all_vowels ='ауоиэыяюеё'
+#
+#     vowels = sum(1 for letter in text if letter in all_vowels)
+#     consonants = sum(1 for letter in text if letter.isalpha() and letter not in all_vowels)
+#
+#     return vowels, consonants
+#
+#
+# input_string = input()
+# vowels, consonants = count_vowels_and_consonants(input_string)
+# print(vowels, consonants)
+#
+# def sort_products(input_strings: List[str]):
+#     """ Обработка списка продуктов и вывод категорий с упорядоченными товарами. """
+#     category_dict = {}
+#     category_list = input_strings[0].split(',')
+#
+#     category_dict[category_list[1]] = (category_list[0], category_list[2])
+#
+#     return category_dict
+#
+#
+# lines = []
+# while True:
+#     try:
+#         line = input()
+#         if line == "":
+#             break
+#     except EOFError:
+#         break
+#     lines.append(line)
+#
+# for string in sort_products(lines):
+#     print(string)
 
 
